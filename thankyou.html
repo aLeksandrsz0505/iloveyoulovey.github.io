@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You, My Love!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .thank-you-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .thank-you-title {
+            font-size: 28px;
+            color: #ff3d7f;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .gif-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .caption {
+            font-size: 18px;
+            color: #ff3d7f;
+        }
+        .floating-gif {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            animation: floatAnimation 5s infinite alternate ease-in-out;
+            z-index: 1;
+        }
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating GIFs -->
+    <img src="ih.gif" class="floating-gif" style="top: 5%; left: 5%;">
+    <img src="ih.gif" class="floating-gif" style="top: 15%; left: 85%;">
+    <img src="ih.gif" class="floating-gif" style="top: 50%; left: 10%;">
+    <img src="ih.gif" class="floating-gif" style="top: 75%; left: 70%;">
+    <img src="ih.gif" class="floating-gif" style="top: 30%; left: 95%;">
+    <img src="ih.gif" class="floating-gif" style="top: 85%; left: 15%;">
+
+    <div class="thank-you-container">
+        <h1 class="thank-you-title">Thank You, My Lovey! </h1>
+        <div class="gif-container">
+            <img src="mwa.gif" alt="Thank You Image">
+            <p class="caption">Satin buong araw na 'toooo ikaw at ako lang let's watch movie, play games and kwentuhan later i love you so muchhhh💕</p>
+        </div>
+        <span class="heart">(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</span>
+    </div>
+</body>
+</html>

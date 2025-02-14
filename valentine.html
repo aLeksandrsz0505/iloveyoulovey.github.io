@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffccd5;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .valentine-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .valentine-title {
+            font-size: 28px;
+            color: #ff3d7f;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .buttons {
+            margin-top: 20px;
+            position: relative;
+        }
+        .button {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            background: #ff3d7f;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s;
+            margin: 10px;
+        }
+        .button:hover {
+            background: #e62e6b;
+        }
+        .gif-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gif-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .no-button {
+            position: absolute;
+        }
+        .no-button:hover {
+            position: absolute;
+            left: calc(10% + (80% * Math.random()));
+            top: calc(10% + (80% * Math.random()));
+        }
+        .floating-gif {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            animation: floatAnimation 5s infinite alternate ease-in-out;
+            z-index: 1;
+        }
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-20px); }
+        }
+    </style>
+    <script>
+        function moveNoButton(button) {
+            const randomX = Math.random() * 200 - 100;
+            const randomY = Math.random() * 200 - 100;
+            button.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+    </script>
+</head>
+<body>
+    <!-- Floating GIFs (outside the letter) -->
+    <img src="pwease.gif" class="floating-gif" style="top: 5%; left: 5%;">
+    <img src="pwease.gif" class="floating-gif" style="top: 15%; left: 85%;">
+    <img src="pwease.gif" class="floating-gif" style="top: 50%; left: 10%;">
+    <img src="pwease.gif" class="floating-gif" style="top: 75%; left: 70%;">
+    <img src="pwease.gif" class="floating-gif" style="top: 30%; left: 95%;">
+    <img src="pwease.gif" class="floating-gif" style="top: 85%; left: 15%;">
+
+    <div class="valentine-container">
+        <div class="gif-container">
+            <img src="uwu.gif" alt="Romantic GIF">
+        </div>
+        <h1 class="valentine-title">
+            Would you fall in love with me again?<br>
+            Would you fall in love with litol asten again?<br>
+            I love you so much, lovey. Please be my Valentine..
+        </h1>
+        <span class="heart">(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</span>
+        <div class="buttons">
+            <a href="thankyou.html" class="button" onclick="alert('yey thank you loveyyy')">Yes</a>
+            <a href="#" class="button no-button" onmouseover="moveNoButton(this)">No</a>
+        </div>
+    </div>
+</body>
+</html>

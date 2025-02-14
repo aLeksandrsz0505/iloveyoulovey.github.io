@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories Gallery</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffe6e6;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 20px;
+        }
+        .gallery-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            text-align: center;
+        }
+        .gallery-title {
+            font-size: 24px;
+            color: #ff3d7f;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            background: #ffe6e6;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ff3d7f;
+        }
+        .heart-decoration {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+            color: red;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            background: #ff3d7f;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        .button:hover {
+            background: #e62e6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Our Beautiful Memories</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="x.png" alt="Memory 1">
+                <p class="caption">Your first birthday with me</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="a.png" alt="Memory 2">
+                <p class="caption">First christmas together</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="r.png" alt="Memory 3">
+                <p class="caption">Fisching phase</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="i.png" alt="Memory 4">
+                <p class="caption">Your cute green avatar (legit cute)</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="aa.png" alt="Memory 5">
+                <p class="caption">Our first and og couple outfit & bloxburg phase</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="t.png" alt="Memory 6">
+                <p class="caption">Our first mini avatarrr</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="ii.png" alt="Memory 7">
+                <p class="caption">Sk8ter matchy outfit natin</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="zzz.png" alt="Memory 8">
+                <p class="caption">Egg game na nilaro natinnn</p>
+            </div>
+            <div class="gallery-item">
+                <span class="heart-decoration">❤️</span>
+                <img src="zzzz.png" alt="Memory 9">
+                <p class="caption">Me na ginawa mong pet uhhuuhu</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="valentine.html" class="button">may tanong aq sau hehe</a>
+            <a href="index.html" class="button">Home</a>
+        </div>
+    </div>
+</body>
+</html>
